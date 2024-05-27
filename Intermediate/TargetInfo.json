@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Proyecto_Galaaga",
+			"Path": "C:\\Users\\ASUS TUF GAMING A15\\Desktop\\erick\\Proyecto_Galaaga\\Source\\Proyecto_Galaaga.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "Proyecto_GalaagaEditor",
+			"Path": "C:\\Users\\ASUS TUF GAMING A15\\Desktop\\erick\\Proyecto_Galaaga\\Source\\Proyecto_GalaagaEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

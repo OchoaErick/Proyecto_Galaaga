@@ -1,0 +1,7 @@
+C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Development\Proyecto_Galaaga\Definitions.Proyecto_Galaaga.h
+C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Source\Proyecto_Galaaga\Proyecto_GalaagaProjectile.h
+C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Inc\Proyecto_Galaaga\Proyecto_GalaagaProjectile.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/ProjectileMovementComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/MovementComponent.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MovementComponent.generated.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ProjectileMovementComponent.generated.h

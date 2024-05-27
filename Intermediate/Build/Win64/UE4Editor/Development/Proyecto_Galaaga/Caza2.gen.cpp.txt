@@ -1,0 +1,9 @@
+C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Development\Proyecto_Galaaga\Definitions.Proyecto_Galaaga.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Source\Proyecto_Galaaga/Caza2.h
+C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Source\Proyecto_Galaaga\Caza.h
+C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Source\Proyecto_Galaaga\Abstrac.h
+C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Inc\Proyecto_Galaaga\Abstrac.generated.h
+C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Inc\Proyecto_Galaaga\Caza.generated.h
+C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Inc\Proyecto_Galaaga\Caza2.generated.h
