@@ -9,13 +9,14 @@ ACaza::ACaza()
 	PrimaryActorTick.bCanEverTick = true;
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Wedge_B.Shape_Wedge_B'"));
 	EnemyMesh->SetStaticMesh(ShipMesh.Object);
-
-	velocidad = 1000;
 	movimiento = true;
+	velocidad = 100;
 }
 
 void ACaza::BeginPlay()
 {
+	Super::BeginPlay();
+	
 }
 
 void ACaza::ataque()

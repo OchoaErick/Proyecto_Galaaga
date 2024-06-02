@@ -1,0 +1,33 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-Proyecto_Galaaga-0064.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\Proyecto_GalaagaEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Development\Proyecto_Galaaga\Abstrac.cpp.obj"
+"C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Development\Proyecto_Galaaga\Caza.cpp.obj"
+"C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Development\Proyecto_Galaaga\Caza1.cpp.obj"
+"C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Development\Proyecto_Galaaga\Caza2.cpp.obj"
+"C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Development\Proyecto_Galaaga\Delta.cpp.obj"
+"C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Development\Proyecto_Galaaga\Delta1.cpp.obj"
+"C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Development\Proyecto_Galaaga\Delta2.cpp.obj"
+"C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Development\Proyecto_Galaaga\Proyecto_Galaaga.cpp.obj"
+"C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Development\Proyecto_Galaaga\Proyecto_GalaagaGameMode.cpp.obj"
+"C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Development\Proyecto_Galaaga\Proyecto_GalaagaPawn.cpp.obj"
+"C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Development\Proyecto_Galaaga\Proyecto_GalaagaProjectile.cpp.obj"
+"C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Development\Proyecto_Galaaga\Abstrac.gen.cpp.obj"
+"C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Development\Proyecto_Galaaga\Caza.gen.cpp.obj"
+"C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Development\Proyecto_Galaaga\Caza1.gen.cpp.obj"
+"C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Development\Proyecto_Galaaga\Caza2.gen.cpp.obj"
+"C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Development\Proyecto_Galaaga\Delta.gen.cpp.obj"
+"C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Development\Proyecto_Galaaga\Delta1.gen.cpp.obj"
+"C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Development\Proyecto_Galaaga\Delta2.gen.cpp.obj"
+"C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Development\Proyecto_Galaaga\Proyecto_Galaaga.init.gen.cpp.obj"
+"C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Development\Proyecto_Galaaga\Proyecto_GalaagaGameMode.gen.cpp.obj"
+"C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Development\Proyecto_Galaaga\Proyecto_GalaagaPawn.gen.cpp.obj"
+"C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Development\Proyecto_Galaaga\Proyecto_GalaagaProjectile.gen.cpp.obj"
+"C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Development\Proyecto_Galaaga\Default.rc2.res"
+/OUT:"C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Development\Proyecto_Galaaga\UE4Editor-Proyecto_Galaaga-0064.lib"

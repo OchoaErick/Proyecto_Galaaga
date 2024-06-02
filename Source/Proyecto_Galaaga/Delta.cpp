@@ -9,19 +9,37 @@ ADelta::ADelta()
 	PrimaryActorTick.bCanEverTick = true;
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_QuadPyramid.Shape_QuadPyramid'"));
 	EnemyMesh->SetStaticMesh(ShipMesh.Object);
+
+	velocidad = 100;
+	movimiento = true;
 }
 
 void ADelta::BeginPlay()
 {
+	Super::BeginPlay();
+
 }
 
 void ADelta::defensa()
 {
 }
-
-void ADelta::Tick(float deltatime)
-{
-}
 void ADelta::Movimiento(float deltatime)
 {
+	FVector NewLocation = GetActorLocation() + FVector(0.0f, movimiento ? velocidad : -velocidad, 0.0f) * deltatime;
+	SetActorLocation(NewLocation);
+	if (GetActorLocation().Y > 1800)
+	{
+		movimiento = false;
+	}
+	else
+		if (GetActorLocation().Y < -1800)
+		{
+			movimiento = true;
+		}
+
+}
+void ADelta::Tick(float deltatime)
+{
+	Super::Tick(deltatime);
+	Movimiento(deltatime);
 }

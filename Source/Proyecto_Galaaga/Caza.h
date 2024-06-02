@@ -17,13 +17,14 @@ public:
 	ACaza();
 public:
 	virtual void BeginPlay() override;
+	
+
 protected:
 	virtual void ataque();
 	float velocidad;
 	bool movimiento;
-	virtual void Movimiento(float deltatime);
+	virtual void Movimiento(float deltatime) override;
 
 public:
 	virtual void Tick(float DeltaTime) override;
-
 };

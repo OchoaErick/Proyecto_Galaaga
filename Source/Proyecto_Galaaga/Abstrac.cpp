@@ -13,16 +13,16 @@ AAbstrac::AAbstrac()
 	EnemyMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("ShipMesh"));
 	EnemyMesh->SetupAttachment(RootComponent);
 	RootComponent = EnemyMesh;
-
 	velocidad = 200;
 	movimiento = true;
+	
 }
 
 // Called when the game starts or when spawned
 void AAbstrac::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
 }
 
 void AAbstrac::Movimiento(float DeltaTime)

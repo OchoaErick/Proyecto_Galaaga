@@ -19,6 +19,9 @@ public:
 	virtual void BeginPlay() override;
 protected:
 	virtual void defensa1();
+	float velocidad;
+	bool movimiento;
+	virtual void Movimiento(float deltatime)override;
 public:
 	virtual void Tick(float deltatime) override;
 	

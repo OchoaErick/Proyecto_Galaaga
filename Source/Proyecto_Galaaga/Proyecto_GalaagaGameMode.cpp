@@ -34,7 +34,7 @@ void AProyecto_GalaagaGameMode::BeginPlay()
 		for (int i = 0; i < 20	; i++) {
 			FVector ubicacion = FVector(a, b, 215.0f);
 			FRotator rotacion = FRotator(0.0f, 0.0f, 0.0f); 
-			int x = rand() % 6;
+			int x = rand() % 1;
 			switch (x) {
 			case 0:
 				World->SpawnActor<ACaza>(ubicacion, rotacion);
