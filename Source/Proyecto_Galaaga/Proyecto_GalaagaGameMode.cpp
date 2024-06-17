@@ -16,7 +16,7 @@ AProyecto_GalaagaGameMode::AProyecto_GalaagaGameMode()
 	// set default pawn class to our character class
 	//DefaultPawnClass = AProyecto_GalaagaPawn::StaticClass();
 	PrimaryActorTick.bCanEverTick = true;
-	
+
 }
 
 void AProyecto_GalaagaGameMode::BeginPlay()
@@ -25,15 +25,15 @@ void AProyecto_GalaagaGameMode::BeginPlay()
 	int a = 0;
 	int b = 0;
 	int c = 0;
-	
+
 
 	UWorld* const World = GetWorld();
 	if (World != nullptr)
 	{
-		
-		for (int i = 0; i < 20	; i++) {
+
+		for (int i = 0; i < 20; i++) {
 			FVector ubicacion = FVector(a, b, 215.0f);
-			FRotator rotacion = FRotator(0.0f, 0.0f, 0.0f); 
+			FRotator rotacion = FRotator(0.0f, 0.0f, 0.0f);
 			int x = rand() % 1;
 			switch (x) {
 			case 0:
@@ -54,13 +54,13 @@ void AProyecto_GalaagaGameMode::BeginPlay()
 			case 5:
 				World->SpawnActor<ADelta2>(ubicacion, rotacion);
 				break;
-			
+
 			}
-			b +=200;
+			b += 200;
 			c++;
 			if (c == 5) {
 				b = 0;
-				a +=200;
+				a += 200;
 				c = 0;
 			}
 		}
@@ -71,4 +71,3 @@ void AProyecto_GalaagaGameMode::BeginPlay()
 void AProyecto_GalaagaGameMode::Tick(float DeltaTime)
 {
 }
-

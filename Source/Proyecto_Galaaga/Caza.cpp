@@ -16,7 +16,7 @@ ACaza::ACaza()
 void ACaza::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
 }
 
 void ACaza::ataque()
@@ -43,4 +43,3 @@ void ACaza::Tick(float deltatime)
 	Super::Tick(deltatime);
 	Movimiento(deltatime);
 }
-

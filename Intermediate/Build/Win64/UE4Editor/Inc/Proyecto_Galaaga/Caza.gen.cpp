@@ -40,7 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeCaza() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACaza_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
+		{ "Comment", "/**\n *\n */" },
 		{ "IncludePath", "Caza.h" },
 		{ "ModuleRelativePath", "Caza.h" },
 	};
@@ -72,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeCaza() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACaza, 2337521127);
+	IMPLEMENT_CLASS(ACaza, 2356427879);
 	template<> PROYECTO_GALAAGA_API UClass* StaticClass<ACaza>()
 	{
 		return ACaza::StaticClass();

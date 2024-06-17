@@ -7,7 +7,7 @@
 #include "Caza.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class PROYECTO_GALAAGA_API ACaza : public AAbstrac
@@ -17,7 +17,7 @@ public:
 	ACaza();
 public:
 	virtual void BeginPlay() override;
-	
+
 
 protected:
 	virtual void ataque();

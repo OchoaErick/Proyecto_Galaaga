@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Proyecto_Galaaga.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{1E8BAE32-2BD1-47F1-BFB5-80FF115D7B5C}</UniqueIdentifier>
+      <UniqueIdentifier>{3C4B48E6-F746-4631-B41F-445DC1A0D705}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Proyecto_Galaaga.Target.cs">
       <Filter>Source</Filter>
@@ -11,8 +11,10 @@
     <None Include="..\..\Source\Proyecto_GalaagaEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{F0C5E5E8-78DC-49EE-8239-46846B520391}</UniqueIdentifier>
+      <UniqueIdentifier>{D7CC4B6C-C618-4087-8054-6F55AF9C3A86}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Proyecto_Galaaga">
-      <UniqueIdentifier>{31B419F2-5B55-4922-B15B-00B296B38CE2}</UniqueIdentifier>
+      <UniqueIdentifier>{F859AE12-0821-4A48-A8AF-E57F65D6C099}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Proyecto_Galaaga\Abstrac.cpp">
       <Filter>Source\Proyecto_Galaaga</Filter>
@@ -72,6 +74,18 @@
       <Filter>Source\Proyecto_Galaaga</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Proyecto_Galaaga\Delta2.h">
+      <Filter>Source\Proyecto_Galaaga</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Proyecto_Galaaga\Fabrica.cpp">
+      <Filter>Source\Proyecto_Galaaga</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Proyecto_Galaaga\Fabrica.h">
+      <Filter>Source\Proyecto_Galaaga</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Proyecto_Galaaga\Proyectil.cpp">
+      <Filter>Source\Proyecto_Galaaga</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Proyecto_Galaaga\Proyectil.h">
       <Filter>Source\Proyecto_Galaaga</Filter>
     </ClInclude>
     <None Include="..\..\Source\Proyecto_Galaaga\Proyecto_Galaaga.Build.cs">
