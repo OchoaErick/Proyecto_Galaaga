@@ -20,11 +20,13 @@ struct FHitResult;
 #define Proyecto_Galaaga_Source_Proyecto_Galaaga_Proyecto_GalaagaProjectile_h_15_SPARSE_DATA
 #define Proyecto_Galaaga_Source_Proyecto_Galaaga_Proyecto_GalaagaProjectile_h_15_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execNotifyHit); \
 	DECLARE_FUNCTION(execOnHit);
 
 
 #define Proyecto_Galaaga_Source_Proyecto_Galaaga_Proyecto_GalaagaProjectile_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execNotifyHit); \
 	DECLARE_FUNCTION(execOnHit);
 
 

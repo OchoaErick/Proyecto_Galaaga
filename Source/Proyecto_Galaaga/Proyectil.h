@@ -1,17 +1,20 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
-
+#include "Iprototype.h"
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "Proyectil.generated.h"
 
 UCLASS()
-class PROYECTO_GALAAGA_API AProyectil : public AActor
+class PROYECTO_GALAAGA_API AProyectil : public AActor, public IIprototype
 {
 	GENERATED_BODY()
-	
-public:	
+public:
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Projectile, meta = (AllowPrivateAccess = "true"))
+	UStaticMeshComponent* EnemyMesh;
+
+public:
 	// Sets default values for this actor's properties
 	AProyectil();
 
@@ -19,11 +22,10 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-protected:
-	float velocidad;
-	bool movimiento;
-	virtual void disparo(float deltatime);
+	virtual void Moverse(float deltatime);
+	AActor* Clonar() override;
 };
+

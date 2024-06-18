@@ -1,6 +1,7 @@
 // Copyright Epic Games, Inc. All Rights Reserve
 
 #include "Proyecto_GalaagaProjectile.h"
+#include "Caza1.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "UObject/ConstructorHelpers.h"
 #include "Components/StaticMeshComponent.h"
@@ -42,4 +43,20 @@ void AProyecto_GalaagaProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* Ot
 	}
 
 	Destroy();
+}
+
+void AProyecto_GalaagaProjectile::NotifyHit(UPrimitiveComponent* MyComp, AActor* Other, UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult& Hit)
+{
+	ACaza1* caza1 = Cast<ACaza1>(Other);
+	if (caza1 != nullptr)
+	{
+		caza1->setVida(caza1->getVida() - 1);
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Vida: ") + FString::FromInt(caza1->getVida()));
+		if (caza1->getVida() == 0)
+		{
+			caza1->Destroy();
+		}
+	
+	}
+
 }

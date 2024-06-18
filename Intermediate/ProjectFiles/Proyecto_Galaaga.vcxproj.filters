@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Proyecto_Galaaga.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{3C4B48E6-F746-4631-B41F-445DC1A0D705}</UniqueIdentifier>
+      <UniqueIdentifier>{68B3A7B1-3ED2-49A1-87C2-9B24064B87B6}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Proyecto_Galaaga.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{D7CC4B6C-C618-4087-8054-6F55AF9C3A86}</UniqueIdentifier>
+      <UniqueIdentifier>{8BDCE37D-7DC3-485A-845C-CF9C0761F66B}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Proyecto_Galaaga">
-      <UniqueIdentifier>{F859AE12-0821-4A48-A8AF-E57F65D6C099}</UniqueIdentifier>
+      <UniqueIdentifier>{A5AA86D5-BB7E-44AA-BC1B-43C58F4DF063}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Proyecto_Galaaga\Abstrac.cpp">
       <Filter>Source\Proyecto_Galaaga</Filter>
@@ -80,6 +80,12 @@
       <Filter>Source\Proyecto_Galaaga</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Proyecto_Galaaga\Fabrica.h">
+      <Filter>Source\Proyecto_Galaaga</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Proyecto_Galaaga\Iprototype.cpp">
+      <Filter>Source\Proyecto_Galaaga</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Proyecto_Galaaga\Iprototype.h">
       <Filter>Source\Proyecto_Galaaga</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Proyecto_Galaaga\Proyectil.cpp">

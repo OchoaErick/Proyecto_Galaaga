@@ -1,6 +1,16 @@
 C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Development\Proyecto_Galaaga\Definitions.Proyecto_Galaaga.h
 C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Source\Proyecto_Galaaga\Proyecto_GalaagaProjectile.h
 C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Inc\Proyecto_Galaaga\Proyecto_GalaagaProjectile.generated.h
+C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Source\Proyecto_Galaaga\Caza1.h
+C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Source\Proyecto_Galaaga\Proyectil.h
+C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Source\Proyecto_Galaaga\Iprototype.h
+C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Inc\Proyecto_Galaaga\Iprototype.generated.h
+C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Inc\Proyecto_Galaaga\Proyectil.generated.h
+C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Source\Proyecto_Galaaga\Caza.h
+C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Source\Proyecto_Galaaga\Abstrac.h
+C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Inc\Proyecto_Galaaga\Abstrac.generated.h
+C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Inc\Proyecto_Galaaga\Caza.generated.h
+C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Inc\Proyecto_Galaaga\Caza1.generated.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/ProjectileMovementComponent.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/MovementComponent.h
 C:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MovementComponent.generated.h

@@ -22,7 +22,8 @@ private: \
 	friend struct Z_Construct_UClass_AProyectil_Statics; \
 public: \
 	DECLARE_CLASS(AProyectil, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Proyecto_Galaaga"), NO_API) \
-	DECLARE_SERIALIZER(AProyectil)
+	DECLARE_SERIALIZER(AProyectil) \
+	virtual UObject* _getUObject() const override { return const_cast<AProyectil*>(this); }
 
 
 #define Proyecto_Galaaga_Source_Proyecto_Galaaga_Proyectil_h_12_INCLASS \
@@ -31,7 +32,8 @@ private: \
 	friend struct Z_Construct_UClass_AProyectil_Statics; \
 public: \
 	DECLARE_CLASS(AProyectil, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/Proyecto_Galaaga"), NO_API) \
-	DECLARE_SERIALIZER(AProyectil)
+	DECLARE_SERIALIZER(AProyectil) \
+	virtual UObject* _getUObject() const override { return const_cast<AProyectil*>(this); }
 
 
 #define Proyecto_Galaaga_Source_Proyecto_Galaaga_Proyectil_h_12_STANDARD_CONSTRUCTORS \

@@ -54,6 +54,10 @@ C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Source\Proyecto_Gala
 C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Inc\Proyecto_Galaaga\Abstrac.generated.h
 C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Inc\Proyecto_Galaaga\Caza.generated.h
 C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Source\Proyecto_Galaaga\Caza1.h
+C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Source\Proyecto_Galaaga\Proyectil.h
+C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Source\Proyecto_Galaaga\Iprototype.h
+C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Inc\Proyecto_Galaaga\Iprototype.generated.h
+C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Inc\Proyecto_Galaaga\Proyectil.generated.h
 C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Inc\Proyecto_Galaaga\Caza1.generated.h
 C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Source\Proyecto_Galaaga\Caza2.h
 C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Inc\Proyecto_Galaaga\Caza2.generated.h

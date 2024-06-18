@@ -31,28 +31,13 @@ void AProyecto_GalaagaGameMode::BeginPlay()
 	if (World != nullptr)
 	{
 
-		for (int i = 0; i < 20; i++) {
+		for (int i = 0; i < 1; i++) {
 			FVector ubicacion = FVector(a, b, 215.0f);
 			FRotator rotacion = FRotator(0.0f, 0.0f, 0.0f);
 			int x = rand() % 1;
 			switch (x) {
 			case 0:
-				World->SpawnActor<ACaza>(ubicacion, rotacion);
-				break;
-			case 1:
 				World->SpawnActor<ACaza1>(ubicacion, rotacion);
-				break;
-			case 2:
-				World->SpawnActor<ACaza2>(ubicacion, rotacion);
-				break;
-			case 3:
-				World->SpawnActor<ADelta>(ubicacion, rotacion);
-				break;
-			case 4:
-				World->SpawnActor<ADelta1>(ubicacion, rotacion);
-				break;
-			case 5:
-				World->SpawnActor<ADelta2>(ubicacion, rotacion);
 				break;
 
 			}

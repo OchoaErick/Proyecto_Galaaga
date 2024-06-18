@@ -17,6 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeProyectil() {}
 	PROYECTO_GALAAGA_API UClass* Z_Construct_UClass_AProyectil();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_Proyecto_Galaaga();
+	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
+	PROYECTO_GALAAGA_API UClass* Z_Construct_UClass_UIprototype_NoRegister();
 // End Cross Module References
 	void AProyectil::StaticRegisterNativesAProyectil()
 	{
@@ -31,6 +33,12 @@ void EmptyLinkFunctionForGeneratedCodeProyectil() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_EnemyMesh_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_EnemyMesh;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -44,6 +52,21 @@ void EmptyLinkFunctionForGeneratedCodeProyectil() {}
 		{ "ModuleRelativePath", "Proyectil.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AProyectil_Statics::NewProp_EnemyMesh_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Projectile" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Proyectil.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AProyectil_Statics::NewProp_EnemyMesh = { "EnemyMesh", nullptr, (EPropertyFlags)0x00100000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AProyectil, EnemyMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AProyectil_Statics::NewProp_EnemyMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AProyectil_Statics::NewProp_EnemyMesh_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AProyectil_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AProyectil_Statics::NewProp_EnemyMesh,
+	};
+		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AProyectil_Statics::InterfaceParams[] = {
+			{ Z_Construct_UClass_UIprototype_NoRegister, (int32)VTABLE_OFFSET(AProyectil, IIprototype), false },
+		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AProyectil_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AProyectil>::IsAbstract,
 	};
@@ -53,12 +76,12 @@ void EmptyLinkFunctionForGeneratedCodeProyectil() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
-		nullptr,
+		Z_Construct_UClass_AProyectil_Statics::PropPointers,
+		InterfaceParams,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_AProyectil_Statics::PropPointers),
+		UE_ARRAY_COUNT(InterfaceParams),
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AProyectil_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AProyectil_Statics::Class_MetaDataParams))
 	};
@@ -71,7 +94,7 @@ void EmptyLinkFunctionForGeneratedCodeProyectil() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AProyectil, 1832044220);
+	IMPLEMENT_CLASS(AProyectil, 4215632296);
 	template<> PROYECTO_GALAAGA_API UClass* StaticClass<AProyectil>()
 	{
 		return AProyectil::StaticClass();

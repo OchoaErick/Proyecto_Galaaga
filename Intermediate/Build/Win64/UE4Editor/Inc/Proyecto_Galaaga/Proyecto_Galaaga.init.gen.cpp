@@ -21,8 +21,8 @@ void EmptyLinkFunctionForGeneratedCodeProyecto_Galaaga_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x23093CC2,
-				0x56175C32,
+				0x3AC7654B,
+				0xE47E9E89,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

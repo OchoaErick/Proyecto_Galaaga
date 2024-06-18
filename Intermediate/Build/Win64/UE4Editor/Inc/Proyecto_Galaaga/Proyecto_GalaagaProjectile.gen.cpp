@@ -24,6 +24,21 @@ void EmptyLinkFunctionForGeneratedCodeProyecto_GalaagaProjectile() {}
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UProjectileMovementComponent_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(AProyecto_GalaagaProjectile::execNotifyHit)
+	{
+		P_GET_OBJECT(UPrimitiveComponent,Z_Param_MyComp);
+		P_GET_OBJECT(AActor,Z_Param_Other);
+		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OtherComp);
+		P_GET_UBOOL(Z_Param_bSelfMoved);
+		P_GET_STRUCT(FVector,Z_Param_HitLocation);
+		P_GET_STRUCT(FVector,Z_Param_HitNormal);
+		P_GET_STRUCT(FVector,Z_Param_NormalImpulse);
+		P_GET_STRUCT_REF(FHitResult,Z_Param_Out_Hit);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->NotifyHit(Z_Param_MyComp,Z_Param_Other,Z_Param_OtherComp,Z_Param_bSelfMoved,Z_Param_HitLocation,Z_Param_HitNormal,Z_Param_NormalImpulse,Z_Param_Out_Hit);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AProyecto_GalaagaProjectile::execOnHit)
 	{
 		P_GET_OBJECT(UPrimitiveComponent,Z_Param_HitComp);
@@ -40,9 +55,99 @@ void EmptyLinkFunctionForGeneratedCodeProyecto_GalaagaProjectile() {}
 	{
 		UClass* Class = AProyecto_GalaagaProjectile::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "NotifyHit", &AProyecto_GalaagaProjectile::execNotifyHit },
 			{ "OnHit", &AProyecto_GalaagaProjectile::execOnHit },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics
+	{
+		struct Proyecto_GalaagaProjectile_eventNotifyHit_Parms
+		{
+			UPrimitiveComponent* MyComp;
+			AActor* Other;
+			UPrimitiveComponent* OtherComp;
+			bool bSelfMoved;
+			FVector HitLocation;
+			FVector HitNormal;
+			FVector NormalImpulse;
+			FHitResult Hit;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MyComp_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MyComp;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Other;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OtherComp_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OtherComp;
+		static void NewProp_bSelfMoved_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bSelfMoved;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_HitLocation;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_HitNormal;
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_NormalImpulse;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Hit_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_Hit;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::NewProp_MyComp_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::NewProp_MyComp = { "MyComp", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Proyecto_GalaagaProjectile_eventNotifyHit_Parms, MyComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::NewProp_MyComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::NewProp_MyComp_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::NewProp_Other = { "Other", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Proyecto_GalaagaProjectile_eventNotifyHit_Parms, Other), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::NewProp_OtherComp_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::NewProp_OtherComp = { "OtherComp", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Proyecto_GalaagaProjectile_eventNotifyHit_Parms, OtherComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::NewProp_OtherComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::NewProp_OtherComp_MetaData)) };
+	void Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::NewProp_bSelfMoved_SetBit(void* Obj)
+	{
+		((Proyecto_GalaagaProjectile_eventNotifyHit_Parms*)Obj)->bSelfMoved = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::NewProp_bSelfMoved = { "bSelfMoved", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(Proyecto_GalaagaProjectile_eventNotifyHit_Parms), &Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::NewProp_bSelfMoved_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::NewProp_HitLocation = { "HitLocation", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Proyecto_GalaagaProjectile_eventNotifyHit_Parms, HitLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::NewProp_HitNormal = { "HitNormal", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Proyecto_GalaagaProjectile_eventNotifyHit_Parms, HitNormal), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::NewProp_NormalImpulse = { "NormalImpulse", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Proyecto_GalaagaProjectile_eventNotifyHit_Parms, NormalImpulse), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::NewProp_Hit_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::NewProp_Hit = { "Hit", nullptr, (EPropertyFlags)0x0010008008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Proyecto_GalaagaProjectile_eventNotifyHit_Parms, Hit), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::NewProp_Hit_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::NewProp_Hit_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::NewProp_MyComp,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::NewProp_Other,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::NewProp_OtherComp,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::NewProp_bSelfMoved,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::NewProp_HitLocation,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::NewProp_HitNormal,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::NewProp_NormalImpulse,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::NewProp_Hit,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Proyecto_GalaagaProjectile.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AProyecto_GalaagaProjectile, nullptr, "NotifyHit", nullptr, nullptr, sizeof(Proyecto_GalaagaProjectile_eventNotifyHit_Parms), Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00C20401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AProyecto_GalaagaProjectile_OnHit_Statics
 	{
@@ -146,6 +251,7 @@ void EmptyLinkFunctionForGeneratedCodeProyecto_GalaagaProjectile() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_Proyecto_Galaaga,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AProyecto_GalaagaProjectile_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AProyecto_GalaagaProjectile_NotifyHit, "NotifyHit" }, // 1491492138
 		{ &Z_Construct_UFunction_AProyecto_GalaagaProjectile_OnHit, "OnHit" }, // 2106155292
 	};
 #if WITH_METADATA
@@ -207,7 +313,7 @@ void EmptyLinkFunctionForGeneratedCodeProyecto_GalaagaProjectile() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AProyecto_GalaagaProjectile, 1225881262);
+	IMPLEMENT_CLASS(AProyecto_GalaagaProjectile, 2364596447);
 	template<> PROYECTO_GALAAGA_API UClass* StaticClass<AProyecto_GalaagaProjectile>()
 	{
 		return AProyecto_GalaagaProjectile::StaticClass();
