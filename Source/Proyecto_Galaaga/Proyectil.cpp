@@ -28,16 +28,16 @@ void AProyectil::Tick(float DeltaTime)
 	Moverse(DeltaTime);
 
 }
-
+// Crea una instancia clon del proyectil
 void AProyectil::Moverse(float deltatime)
 {
 	float velocidad = -500;
 	FVector NewPos = GetActorLocation() + FVector(velocidad,0.0f, 0.0f) * deltatime;
 	SetActorLocation(NewPos);
 }
-
 AActor* AProyectil::Clonar()
 {
+
 	AProyectil* proyectilclon = GetWorld()->SpawnActor<AProyectil>(AProyectil::StaticClass());
 	proyectilclon->SetActorLocation(GetActorLocation()+FVector(0.0f,100.0f,0.0f));
 	proyectilclon->SetActorRotation(GetActorRotation());

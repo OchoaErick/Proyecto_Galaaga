@@ -48,13 +48,14 @@ void ACaza1::Tick(float deltatime)
 		Disparar();
 		tiempo = 0;
 	}
-}
+}// Spawnea un proyectil en la posición y rotación del caza
 void ACaza1::Disparar()
 {
+	
 	AProyectil* proyectil = GetWorld()->SpawnActor<AProyectil>(GetActorLocation(), GetActorRotation());
 	if (getVida() <= 5)
 	{ 
-		proyectilclonado = Cast<AProyectil>(proyectil->Clonar());
+	proyectilclonado = Cast<AProyectil>(proyectil->Clonar());
 	}
 	if (getVida() <= 3) {
 		proyectilclonado2 = Cast<AProyectil>(proyectil->Clonar());
