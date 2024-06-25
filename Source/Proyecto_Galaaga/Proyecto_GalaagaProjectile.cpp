@@ -2,6 +2,7 @@
 
 #include "Proyecto_GalaagaProjectile.h"
 #include "Caza1.h"
+#include "Abstrac.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "UObject/ConstructorHelpers.h"
 #include "Components/StaticMeshComponent.h"
@@ -52,11 +53,20 @@ void AProyecto_GalaagaProjectile::NotifyHit(UPrimitiveComponent* MyComp, AActor*
 	{
 		caza1->setVida(caza1->getVida() - 1);
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Vida: ") + FString::FromInt(caza1->getVida()));
-		if (caza1->getVida() == 0)
+		if (caza1->getVida() <= 0)
 		{
 			caza1->Destroy();
 		}
 	
 	}
-
+	AAbstrac* abstrac = Cast<AAbstrac>(Other);
+	if (abstrac != nullptr)
+	{
+		abstrac->setVida(abstrac->getVida() - 1);
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Vida: ") + FString::FromInt(abstrac->getVida()));
+		if (abstrac->getVida() <= 0)
+		{
+			abstrac->Destroy();
+		}
+	}
 }

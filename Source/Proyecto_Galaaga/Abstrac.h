@@ -33,4 +33,9 @@ protected:
 	virtual void mover() PURE_VIRTUAL(AAbstrac::mover, );
 	virtual void balas() PURE_VIRTUAL(AAbstrac::balas, );
 	virtual void Movimiento(float deltatime);
+private:
+	int vidaabs;
+public:
+	FORCEINLINE int getVida() const { return vidaabs; }
+	FORCEINLINE void setVida(int _vidaabs) { vidaabs = _vidaabs; }
 };

@@ -8,14 +8,27 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
 #ifdef PROYECTO_GALAAGA_Fabrica_generated_h
 #error "Fabrica.generated.h already included, missing '#pragma once' in Fabrica.h"
 #endif
 #define PROYECTO_GALAAGA_Fabrica_generated_h
 
 #define Proyecto_Galaaga_Source_Proyecto_Galaaga_Fabrica_h_12_SPARSE_DATA
-#define Proyecto_Galaaga_Source_Proyecto_Galaaga_Fabrica_h_12_RPC_WRAPPERS
-#define Proyecto_Galaaga_Source_Proyecto_Galaaga_Fabrica_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define Proyecto_Galaaga_Source_Proyecto_Galaaga_Fabrica_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execNavesDestruidas); \
+	DECLARE_FUNCTION(execCrearNaves2); \
+	DECLARE_FUNCTION(execCrearNaves);
+
+
+#define Proyecto_Galaaga_Source_Proyecto_Galaaga_Fabrica_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execNavesDestruidas); \
+	DECLARE_FUNCTION(execCrearNaves2); \
+	DECLARE_FUNCTION(execCrearNaves);
+
+
 #define Proyecto_Galaaga_Source_Proyecto_Galaaga_Fabrica_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAFabrica(); \

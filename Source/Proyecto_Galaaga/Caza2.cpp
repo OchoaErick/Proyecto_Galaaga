@@ -9,6 +9,7 @@ ACaza2::ACaza2()
 	EnemyMesh->SetStaticMesh(ShipMesh.Object);
 	velocidad = 100;
 	movimiento = true;
+	vida = 10;
 }
 
 void ACaza2::BeginPlay()

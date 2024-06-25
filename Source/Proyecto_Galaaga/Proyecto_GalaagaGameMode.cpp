@@ -10,6 +10,7 @@
 #include "Delta.h"
 #include "Delta1.h"
 #include "Delta2.h"
+#include "Fabrica.h"
 
 AProyecto_GalaagaGameMode::AProyecto_GalaagaGameMode()
 {
@@ -22,34 +23,9 @@ AProyecto_GalaagaGameMode::AProyecto_GalaagaGameMode()
 void AProyecto_GalaagaGameMode::BeginPlay()
 {
 	Super::BeginPlay();
-	int a = 0;
-	int b = 0;
-	int c = 0;
 
-
-	UWorld* const World = GetWorld();
-	if (World != nullptr)
-	{
-
-		for (int i = 0; i < 1; i++) {
-			FVector ubicacion = FVector(a, b, 215.0f);
-			FRotator rotacion = FRotator(0.0f, 0.0f, 0.0f);
-			int x = rand() % 1;
-			switch (x) {
-			case 0:
-				World->SpawnActor<ACaza1>(ubicacion, rotacion);
-				break;
-
-			}
-			b += 200;
-			c++;
-			if (c == 5) {
-				b = 0;
-				a += 200;
-				c = 0;
-			}
-		}
-	}
+	AFabrica* fabrica = GetWorld()->SpawnActor<AFabrica>(AFabrica::StaticClass());
+	//fabrica->CrearNaves("escuadron1");
 }
 
 

@@ -3,9 +3,9 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Caza1.h"
 #include "GameFramework/Actor.h"
 #include "Fabrica.generated.h"
-
 UCLASS()
 class PROYECTO_GALAAGA_API AFabrica : public AActor
 {
@@ -22,5 +22,15 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+private:
+	UFUNCTION()virtual void CrearNaves(FString escuadron1);
+	UFUNCTION()virtual void CrearNaves2(FString escuadron1);
+	UFUNCTION()virtual void NavesDestruidas(AActor* DestroyedActor);
+	TArray<class ACaza1*> EscuadronesActuales;
+	TArray<class ACaza2*> EscuadronesActuales2;
+
+	int t1, t2;
+	int navesVivas,navesVivas2;
+
 
 };

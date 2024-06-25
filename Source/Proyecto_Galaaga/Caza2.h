@@ -24,4 +24,11 @@ protected:
 	virtual void Movimiento(float deltatime)override;
 public:
 	virtual void Tick(float deltatime) override;
+	//hereda la vida de la clase abstarct
+private:
+	int vida;
+public:
+	FORCEINLINE int getVida() const { return vida; }
+	FORCEINLINE void setVida(int _vida) { vida = _vida; }
+
 };

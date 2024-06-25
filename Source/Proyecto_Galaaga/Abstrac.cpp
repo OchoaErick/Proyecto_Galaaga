@@ -15,6 +15,7 @@ AAbstrac::AAbstrac()
 	RootComponent = EnemyMesh;
 	velocidad = 200;
 	movimiento = true;
+	vidaabs = 10;
 
 }
 

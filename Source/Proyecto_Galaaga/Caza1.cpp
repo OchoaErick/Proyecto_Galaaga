@@ -7,6 +7,7 @@ ACaza1::ACaza1()
 {
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("StaticMesh'/Game/StarterContent/Shapes/Shape_Cube.Shape_Cube'"));
 	EnemyMesh->SetStaticMesh(ShipMesh.Object);
+//	OnDestroyed.AddDynamic(this, &ACaza1::HandleDestruction);
 	velocidad = 100;
 	movimiento = true;
 	vida = 10;
@@ -14,8 +15,7 @@ ACaza1::ACaza1()
 
 void ACaza1::BeginPlay()
 {
-	Super::BeginPlay();
-	
+	Super::BeginPlay();	
 }
 
 void ACaza1::ataque1()
@@ -48,10 +48,14 @@ void ACaza1::Tick(float deltatime)
 		Disparar();
 		tiempo = 0;
 	}
-}// Spawnea un proyectil en la posición y rotación del caza
+}
+
+
+
+
+// Spawnea un proyectil en la posición y rotación del caza
 void ACaza1::Disparar()
 {
-	
 	AProyectil* proyectil = GetWorld()->SpawnActor<AProyectil>(GetActorLocation(), GetActorRotation());
 	if (getVida() <= 5)
 	{ 

@@ -67,3 +67,5 @@ C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Source\Proyecto_Gala
 C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Inc\Proyecto_Galaaga\Delta1.generated.h
 C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Source\Proyecto_Galaaga\Delta2.h
 C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Inc\Proyecto_Galaaga\Delta2.generated.h
+C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Source\Proyecto_Galaaga\Fabrica.h
+C:\Users\ASUS TUF GAMING A15\Desktop\erick\Proyecto_Galaaga\Intermediate\Build\Win64\UE4Editor\Inc\Proyecto_Galaaga\Fabrica.generated.h
